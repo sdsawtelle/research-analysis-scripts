@@ -1,6 +1,6 @@
 """This module provides functionality to plot, prepare and fit standard EM traces within the constant-power model for
 electromigration. The user is able to restrict what parts of the trace should be included in analysis to exclude, for
-instance, later traces once the junction resistance is high and the device is unstable. Once the trace has been culled
+instance, later ramp cycles once the junction resistance is high and the device is unstable. Once the trace has been culled
 in this fashion, the analysis consists of identifying the current and voltage points where EM occurs, and then fitting
 that set of points using a constant critical power model.
 
@@ -93,18 +93,18 @@ def plot_ramps(df_ramps, falsecol=False, rjmax=None, trace=""):
     if not rjmax:
         for indx, row in df_ramps.iterrows():
             if row["falseramp"] and falsecol == True:
-                ax1.plot(row["volt"], row["res"], marker='s', color="magenta", markersize=5, label=indx)
+                ax1.plot(row["volt"], row["res"], marker='s', color="magenta", markersize=5, mew=0.0, label=indx)
             else:
-                ax1.plot(row["volt"], row["res"], markerfacecolor="None", label=indx)
+                ax1.plot(row["volt"], row["res"],  mew=0.0, label=indx)
     else:
         start_r = df_ramps.loc[0, "first_r"]
         rmax = start_r + rjmax
         for indx, row in df_ramps.iterrows():
             if row["last_v"] / row["last_i"] <= rmax:
                 if row["falseramp"] and falsecol == True:
-                    ax1.plot(row["volt"], row["res"], marker='s', color="magenta", markersize=5, label=indx)
+                    ax1.plot(row["volt"], row["res"], marker='s', color="magenta", markersize=5, mew=0.0, label=indx)
                 else:
-                    ax1.plot(row["volt"], row["res"], markerfacecolor="None", label=indx)
+                    ax1.plot(row["volt"], row["res"], mew=0.0, label=indx)
             else:
                 break
     return fig1, ax1
@@ -162,7 +162,8 @@ def revise_prep(fname):
         prepped_traces_dict = {}
 
     trace = fname.strip(".txt")
-    df = extract_ramps(fname)
+    df = get_trace(fname)
+    df = extract_ramps(df)
 
     # Do Analysis
     res_tot_0 = choose_res_tot_0(df)
@@ -318,7 +319,7 @@ def do_fit(volt, curr, res_tot_0):
 
     # Fit the model using LSQ loss (alternately, specify loss to get more outlier-robust fitting)
     theta0 = [1e-4, 10]  # first param is critical power, second param is initial Rj
-    lsq = least_squares(residuals, theta0, args=(volt, curr, res_tot_0))
+    lsq = least_squares(residuals, theta0, args=(volt, curr, res_tot_0), loss="soft_l1")
     return lsq
 
 
@@ -355,7 +356,8 @@ def plot_fit(trace, volt, curr, lsq_fit, res_tot_0):
     ax_inset.get_yaxis().set_visible(False)
 
     # Textbox with more info
-    ax.text(0.02, 0.2, "$R_0^{tot}$ = %.0f $\Omega$" % rn[0], transform=ax.transAxes, fontsize=14, verticalalignment="top")
+    ax.text(0.02, 0.2, "$R_0^{tot}$ = %.0f $\Omega$" % res_tot_0,
+            transform=ax.transAxes, fontsize=14, verticalalignment="top")
     return fig, ax
 
 
@@ -382,13 +384,13 @@ def set_pc_conform(dfpickle, name="", value=0):
 # PREPARE AND FIT ALL TRACES IN DIR #####
 ######################################################
 # Set values for all relevant variables
-chip = "7-2-a_After_ODT"
-group = "50x400"
-temp = 298
-env = "Ambient_ProbeStation"
+chip = "9-11"
+group = "40x400"
+temp = 95.0
+env = "He_gas"
 
 # Move to the place where this data is stored
-path = "C:/Users/Sonya/Documents/My Box Files/molT Project/161005_Chip_7-2-a/AfterFunctionalization"
+path = "C:/Users/Sonya/Documents/My Box Files/MolT Project/170113_SDS20_Chip_9-11/EM/40x400"
 os.chdir(path)
 
 # Look at pics to discard any really crap traces from being analyzed

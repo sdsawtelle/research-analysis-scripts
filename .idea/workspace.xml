@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="677ffba4-fdb6-4925-a384-4e14430bdb7b" name="Default" comment="" />
+    <list default="true" id="677ffba4-fdb6-4925-a384-4e14430bdb7b" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/em_cont_pow_model/em_pc_prep_and_fit.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/em_cont_pow_model/em_pc_visualize_results.py" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cbif-neuroprobe/cbif_oxygen_sensor_analysis.py" afterPath="$PROJECT_DIR$/cbif-neuroprobe/cbif_oxygen_sensor_analysis.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/em_iv_and_rv_plotting.py" afterPath="$PROJECT_DIR$/em_iv_and_rv_plotting.py" />
+    </list>
     <ignored path="python-research-data-scripts.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,7 +28,82 @@
     <favorites_list name="python-research-data-scripts" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="snips.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../python-wrappers-and-snippets/snips.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2">
+              <caret line="276" column="19" selection-start-line="276" selection-start-column="19" selection-end-line="276" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="em_iv_and_rv_plotting.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/em_iv_and_rv_plotting.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2">
+              <caret line="120" column="24" selection-start-line="120" selection-start-column="24" selection-end-line="120" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="em_pc_visualize_results.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/em_const_pow_model/em_pc_visualize_results.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-578">
+              <caret line="87" column="0" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="em_pc_prep_and_fit.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/em_const_pow_model/em_pc_prep_and_fit.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="113" selection-start-line="13" selection-start-column="113" selection-end-line="13" selection-end-column="113" />
+              <folding>
+                <element signature="e#1965#1982#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="em_pc_prep_and_fit_partial_and_final_TEMP.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/em_const_pow_model/em_pc_prep_and_fit_partial_and_final_TEMP.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="662" column="14" selection-start-line="662" selection-start-column="14" selection-end-line="662" selection-end-column="14" />
+              <folding>
+                <element signature="e#4551#4568#0" expanded="true" />
+                <element signature="e#5091#6376#0" expanded="false" />
+                <element signature="e#6415#7513#0" expanded="false" />
+                <element signature="e#7550#8932#0" expanded="false" />
+                <element signature="e#9689#10732#0" expanded="false" />
+                <element signature="e#10764#12419#0" expanded="false" />
+                <element signature="e#12448#12652#0" expanded="false" />
+                <element signature="e#12682#14959#0" expanded="false" />
+                <element signature="e#14992#15430#0" expanded="false" />
+                <element signature="e#15463#15865#0" expanded="false" />
+                <element signature="e#15899#16306#0" expanded="false" />
+                <element signature="e#16350#17256#0" expanded="false" />
+                <element signature="e#17469#21619#0" expanded="false" />
+                <element signature="e#21665#23629#0" expanded="false" />
+                <element signature="e#23675#23829#0" expanded="false" />
+                <element signature="e#23898#25373#0" expanded="false" />
+                <element signature="e#26120#27352#0" expanded="false" />
+                <element signature="e#27396#29730#0" expanded="false" />
+                <element signature="e#29759#31513#0" expanded="false" />
+                <marker date="1484678159935" expanded="false" signature="8964:9497" ph="..." />
+                <marker date="1484678159935" expanded="false" signature="25581:25880" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -28,6 +111,9 @@
         <option value="Python Script" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -41,7 +127,6 @@
         <option value="$PROJECT_DIR$/../python-google-foobar/string_cleaning.py" />
         <option value="$PROJECT_DIR$/pc_vs_rj_analysis.py" />
         <option value="$PROJECT_DIR$/current_range_simulation.py" />
-        <option value="$PROJECT_DIR$/../python-wrappers-and-snippets/snips.py" />
         <option value="$PROJECT_DIR$/Xiang_CritPower_Temp_Model.py" />
         <option value="$PROJECT_DIR$/CBIF.py" />
         <option value="$PROJECT_DIR$/../python-scrabble-project/src/anagram_console_game.py" />
@@ -50,6 +135,15 @@
         <option value="$PROJECT_DIR$/em_pc_vs_rj_prep_and_fit.py" />
         <option value="$PROJECT_DIR$/em_pc_vs_rj_analyze_results.py" />
         <option value="$PROJECT_DIR$/keithley_current_range_simulation.py" />
+        <option value="$PROJECT_DIR$/cbif-neuroprobe/cbif_oxygen_sensor_analysis.py" />
+        <option value="$PROJECT_DIR$/em_const_pow_model/nw-yield-monitoring.py" />
+        <option value="$PROJECT_DIR$/em_const_pow_model/em_pc_visualize_results.py" />
+        <option value="$PROJECT_DIR$/em_const_pow_model/em_pc_prep_and_fit.py" />
+        <option value="$PROJECT_DIR$/em_const_pow_model/em_finish_pc_prep_and_fit.py" />
+        <option value="$PROJECT_DIR$/em_const_pow_model/em_pc_prep_and_fit_partial_and_final.py" />
+        <option value="$PROJECT_DIR$/em_iv_and_rv_plotting.py" />
+        <option value="$PROJECT_DIR$/../python-wrappers-and-snippets/snips.py" />
+        <option value="$PROJECT_DIR$/em_const_pow_model/em_pc_prep_and_fit_partial_and_final_TEMP.py" />
       </list>
     </option>
   </component>
@@ -88,7 +182,8 @@
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="reference.settings.ics" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/em_iv_and_rv_plotting.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/em_const_pow_model/em_finish_pc_prep_and_fit.py" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/Sonya/Documents/My Box Files/Projects/python-wrappers-and-snippets/snips.py" />
   </component>
   <component name="RunManager" selected="Python.pc_vs_rj_analysis">
     <configuration default="false" name="extract_series_resistance" type="PythonConfigurationType" factoryName="Python" singleton="true" temporary="true">
@@ -328,15 +423,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1696" height="1026" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32987553" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.44190872" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.373444" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32987553" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32987553" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -347,6 +441,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32987553" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -356,8 +451,8 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34543568" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4087137" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32987553" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32987553" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -399,55 +494,17 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="135" />
+      <option name="time" value="147" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../python-wrappers-and-snippets/snips.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3791">
-          <caret line="227" column="14" selection-start-line="227" selection-start-column="14" selection-end-line="227" selection-end-column="14" />
-          <folding>
-            <element signature="e#153#162#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pc_vs_rj_analysis.py" />
-    <entry file="file://$PROJECT_DIR$/current_range_simulation.py" />
-    <entry file="file://$PROJECT_DIR$/../python-wrappers-and-snippets/snips.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3791">
-          <caret line="227" column="14" selection-start-line="227" selection-start-column="14" selection-end-line="227" selection-end-column="14" />
-          <folding>
-            <element signature="e#153#162#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pc_vs_rj_analysis.py" />
-    <entry file="file://$PROJECT_DIR$/current_range_simulation.py" />
-    <entry file="file://$PROJECT_DIR$/../python-wrappers-and-snippets/snips.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5559">
-          <caret line="331" column="31" selection-start-line="331" selection-start-column="31" selection-end-line="331" selection-end-column="31" />
-          <folding>
-            <element signature="e#153#162#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pc_vs_rj_analysis.py" />
-    <entry file="file://$PROJECT_DIR$/current_range_simulation.py" />
     <entry file="file://$PROJECT_DIR$/../python-web-scraping/zombie_problem.py" />
     <entry file="file://$PROJECT_DIR$/../python-wrappers-and-snippets/snips.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5219">
           <caret line="311" column="34" selection-start-line="311" selection-start-column="34" selection-end-line="311" selection-end-column="34" />
-          <folding>
-            <element signature="e#153#162#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -457,9 +514,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5219">
           <caret line="311" column="34" selection-start-line="311" selection-start-column="34" selection-end-line="311" selection-end-column="34" />
-          <folding>
-            <element signature="e#153#162#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -531,116 +586,139 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../python-scrabble-project/anagram_console_game.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../python-scrabble-project/stanagram_map.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../python-scrabble-project/anagram_console_game.py" />
+    <entry file="file://$PROJECT_DIR$/../python-scrabble-project/stanagram_map.py" />
     <entry file="file://$PROJECT_DIR$/pc_vs_rj_analysis.py" />
     <entry file="file://$PROJECT_DIR$/current_range_simulation.py" />
     <entry file="file://$PROJECT_DIR$/CBIF.py" />
     <entry file="file://$PROJECT_DIR$/Xiang_CritPower_Temp_Model.py" />
-    <entry file="file://$PROJECT_DIR$/../python-wrappers-and-snippets/snips.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="19" selection-start-line="0" selection-start-column="0" selection-end-line="5" selection-end-column="19" />
-          <folding>
-            <element signature="e#153#162#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../python-scrabble-project/src/anagram_console_game.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="309">
           <caret line="139" column="0" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/em_pc_vs_rj_analysis.py" />
+    <entry file="file://$PROJECT_DIR$/em_simple_plotting.py" />
+    <entry file="file://$PROJECT_DIR$/em_pc_vs_rj_prep_and_fit.py" />
+    <entry file="file://$PROJECT_DIR$/em_pc_vs_rj_analyze_results.py" />
+    <entry file="file://$PROJECT_DIR$/chip_dev_geometry_dicts.py" />
+    <entry file="file://$PROJECT_DIR$/nw_resistivity_and_rseries_fit.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-249">
+          <caret line="1" column="117" selection-start-line="1" selection-start-column="117" selection-end-line="1" selection-end-column="117" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/em_cont_pow_model/em_pc_prep_and_fit.py" />
+    <entry file="file://$PROJECT_DIR$/keithley_current_range_simulation.py" />
+    <entry file="file://$PROJECT_DIR$/em_const_volt_traces/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1275">
+          <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cbif-neuroprobe/cbif_oxygen_sensor_analysis.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="171" column="9" selection-start-line="171" selection-start-column="9" selection-end-line="171" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crit_temp_model_xiang2014.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="29" column="45" selection-start-line="29" selection-start-column="45" selection-end-line="29" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/em_const_pow_model/nw-yield-monitoring.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="577">
+          <caret line="115" column="0" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/em_const_pow_model/em_pc_visualize_results.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-578">
+          <caret line="87" column="0" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/em_pc_vs_rj_analysis.py">
+    <entry file="file://$PROJECT_DIR$/em_const_pow_model/em_finish_pc_prep_and_fit.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="482" column="24" selection-start-line="482" selection-start-column="24" selection-end-line="482" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/em_const_pow_model/em_pc_prep_and_fit_partial_and_final.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="387" column="28" selection-start-line="387" selection-start-column="28" selection-end-line="387" selection-end-column="28" />
-          <folding />
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <element signature="e#4551#4568#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/em_simple_plotting.py">
+    <entry file="file://$PROJECT_DIR$/../python-wrappers-and-snippets/snips.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+        <state relative-caret-position="-2">
+          <caret line="276" column="19" selection-start-line="276" selection-start-column="19" selection-end-line="276" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/em_iv_and_rv_plotting.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="8" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
+        <state relative-caret-position="-2">
+          <caret line="120" column="24" selection-start-line="120" selection-start-column="24" selection-end-line="120" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/em_pc_vs_rj_prep_and_fit.py">
+    <entry file="file://$PROJECT_DIR$/em_const_pow_model/em_pc_prep_and_fit.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="84" column="19" selection-start-line="84" selection-start-column="19" selection-end-line="84" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/em_pc_vs_rj_analyze_results.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chip_dev_geometry_dicts.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nw_resistivity_and_rseries_fit.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-249">
-          <caret line="1" column="117" selection-start-line="1" selection-start-column="117" selection-end-line="1" selection-end-column="117" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/em_cont_pow_model/em_pc_prep_and_fit.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4828">
-          <caret line="4" column="39" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/keithley_current_range_simulation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="20" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="20" />
+        <state relative-caret-position="221">
+          <caret line="13" column="113" selection-start-line="13" selection-start-column="113" selection-end-line="13" selection-end-column="113" />
           <folding>
-            <element signature="e#478#495#0" expanded="true" />
-            <element signature="e#5049#5306#0" expanded="false" />
-            <element signature="e#5346#5743#0" expanded="false" />
-            <element signature="e#5773#6111#0" expanded="false" />
+            <element signature="e#1965#1982#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/em_const_pow_model/em_pc_prep_and_fit_partial_and_final_TEMP.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="662" column="14" selection-start-line="662" selection-start-column="14" selection-end-line="662" selection-end-column="14" />
+          <folding>
+            <element signature="e#4551#4568#0" expanded="true" />
+            <element signature="e#5091#6376#0" expanded="false" />
+            <element signature="e#6415#7513#0" expanded="false" />
+            <element signature="e#7550#8932#0" expanded="false" />
+            <element signature="e#9689#10732#0" expanded="false" />
+            <element signature="e#10764#12419#0" expanded="false" />
+            <element signature="e#12448#12652#0" expanded="false" />
+            <element signature="e#12682#14959#0" expanded="false" />
+            <element signature="e#14992#15430#0" expanded="false" />
+            <element signature="e#15463#15865#0" expanded="false" />
+            <element signature="e#15899#16306#0" expanded="false" />
+            <element signature="e#16350#17256#0" expanded="false" />
+            <element signature="e#17469#21619#0" expanded="false" />
+            <element signature="e#21665#23629#0" expanded="false" />
+            <element signature="e#23675#23829#0" expanded="false" />
+            <element signature="e#23898#25373#0" expanded="false" />
+            <element signature="e#26120#27352#0" expanded="false" />
+            <element signature="e#27396#29730#0" expanded="false" />
+            <element signature="e#29759#31513#0" expanded="false" />
+            <marker date="1484678159935" expanded="false" signature="8964:9497" ph="..." />
+            <marker date="1484678159935" expanded="false" signature="25581:25880" ph="..." />
           </folding>
         </state>
       </provider>

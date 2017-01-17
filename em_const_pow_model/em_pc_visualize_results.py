@@ -61,10 +61,16 @@ def plot_ramps(df_ramps, falsecol=False, rjmax=None, trace=""):
 ######################################################
 ########################
 # Set params and path
-path = "C:/Users/Sonya/Documents/My Box Files/MolT Project/160927_SDS20_Chip_4-10/EM/EM_50x400/"
-os.chdir(path)
+chip = "9-11"
+group = "50x400"
+temp = 95.0
+env = "He_gas"
 rjmax = 200
 rjmin = 0
+
+# Move to the place where this data is stored
+path = "C:/Users/Sonya/Documents/My Box Files/MolT Project/170113_SDS20_Chip_9-11/EM/50x400"
+os.chdir(path)
 dfpickle = "fit_results_df_Rjmax_" + str(rjmax) + "_Rjmin_" + str(rjmin) + ".pickle"
 
 
@@ -125,7 +131,7 @@ with open(fit2, "wb") as myfile:
 # PLOT FITTED PARAMETERS ####
 ######################################################
 # Move to the place where this data is stored
-path = "C:/Users/Sonya/Documents/My Box Files/MolT Project/160927_SDS20_Chip_4-10/EM/"
+path = "C:/Users/Sonya/Documents/My Box Files/MolT Project/170113_SDS20_Chip_9-11/EM/50x400"
 os.chdir(path)
 with open(dfpickle, "rb") as myfile:
     df = pickle.load(myfile)
@@ -137,10 +143,12 @@ ax.plot(df["res_tot_0"], df["powj"]*1000, linestyle="", markersize=9)
 plt.savefig("Powj_vs_InitialR_Rjmax_" + str(rjmax) + "_Rjmin_" + str(rjmin) + ".png")
 
 fig, ax = snp.newfig()
-snp.labs("Fitted $R_0^J$ ($\Omega$)", "Fitted Power (mW)", "Fit Parameters Excluding Non-Pc-Conforming")
-ax.plot(df["rj0"], df["powj"]*1000, linestyle="", markersize=9, label="Chip 4-10")
+snp.labs("Fitted $R_0^J$ ($\Omega$)", "Fitted Power (mW)", "Fitted Parameters 50x400")
+ax.plot(df["rj0"], df["powj"]*1000, linestyle="", markersize=9, label="Geometry 50x400, Chip 9-11")
+# Textbox with more info
+ax.text(0.5, 0.2, "mean $P_c$ = %.3f $\pm$ %.3f" % ((df["powj"]*1000).mean(), (df["powj"]*1000).std()),
+        transform=ax.transAxes, fontsize=14, verticalalignment="top")
 plt.savefig("Rj0_vs_Powj_Rjmax_" + str(rjmax) + "_Rjmin_" + str(rjmin) + ".png")
-ax.legend(loc="upper left")
 
 
 

@@ -98,7 +98,7 @@ plt.savefig("Sample.png")
 #######################################################################
 ############ PLOTTING ALL IV SWEEPS ############
 #######################################################################
-path = "C:/Users/Sonya/Documents/My Box Files/CBIF_Project/161208_CBIF_GlassDev21/lowv_stability2"
+path = "C:/Users/Sonya/Documents/My Box Files/CBIF_Project/161215_CBIF_GlassDev11/combo_am_with_after_no_v"
 os.chdir(path)
 fnames = snp.txtfilenames(path)
 mt = {}
@@ -137,7 +137,7 @@ plt.savefig("All_Sweeps_Combined.png")
 #######################################################################
 ############ PLOTTING NOISE ############
 #######################################################################
-path = "C:/Users/Sonya/Documents/My Box Files/CBIF_Project/161208_CBIF_GlassDev21/lowv_3rd_stability1"
+path = "C:/Users/Sonya/Documents/My Box Files/CBIF_Project/161215_CBIF_GlassDev11/combo_am_with_after_no_v"
 os.chdir(path)
 fnames = snp.txtfilenames(path)
 mt = {}
@@ -146,12 +146,12 @@ for fname in fnames:
 fnames_sorted = sorted(mt.items(), key=operator.itemgetter(1))
 fnames = [name for name, mt in fnames_sorted]
 times = [datetime.datetime.fromtimestamp(mt) for name, mt in fnames_sorted]
-elaps = [abs((time - times[0]).total_seconds())/60 for time in times]
+elaps = [abs((time - times[0]).total_seconds())/3660 for time in times]
 
 
 
 fig, ax = snp.newfig()
-snp.labs("Elapsed Time (min)", "Normalized |Current| (nA)", "Normalized Noise / Drift")
+snp.labs("Elapsed Time (hrs)", "Normalized |Current| (nA)", "Normalized Noise / Drift")
 
 vrange = np.arange(-0.38, -0.8, -0.1)
 NUM_COLORS = len(vrange)
