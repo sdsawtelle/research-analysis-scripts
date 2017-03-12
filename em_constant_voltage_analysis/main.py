@@ -195,25 +195,25 @@ def smoothtrace(datadir, filename):
     # SMOOTH THE POWER
     #################################
     # Get the power from the smoothed resistance and current
-    # pow = smcurr**2*smrj
-    # splfit_pow = UnivariateSpline(time, pow, k=3)
+    # compute_pow = smcurr**2*smrj
+    # splfit_pow = UnivariateSpline(time, compute_pow, k=3)
     # spl_pow = splfit_pow(time)
-    # smpow = windowsmoother(pow, time, 1, 0.05, 0.03)
+    # smpow = windowsmoother(compute_pow, time, 1, 0.05, 0.03)
 
     # snp.newfig("ur")
-    # plt.plot(time, pow, marker='o')
+    # plt.plot(time, compute_pow, marker='o')
     # plt.xlabel("time (Arb. Units)")
     # plt.ylabel("Power")
     # plt.title("Power")
     # endptindxs, endptvals = snp.pickdatapoints(time, spl_rate, 4)  # ginput has same effect as plt.show()
     # endflat, endelbow, endupshoot, endturnover = endptindxs
     #
-    # flat_pow = windowsmoother(pow[:endflat], time[:endflat], 8, 0.05, 0.12)
-    # elbow_pow = windowsmoother(pow[endflat:endelbow], time[endflat:endelbow], 6, 0.03, 0.07)
-    # # upshoot_pow = windowsmoother(pow[endelbow:endupshoot], time[endelbow:endupshoot], 3, 0.02, 0.15)
-    # upshoot_pow = pow[endelbow:endupshoot].tolist()
-    # turnover_pow = windowsmoother(pow[endupshoot:endturnover], time[endupshoot:endturnover], 6, 0.03, 0.07)
-    # topoff_pow = windowsmoother(pow[endturnover:], time[endturnover:], 8, 0.05, 0.12)
+    # flat_pow = windowsmoother(compute_pow[:endflat], time[:endflat], 8, 0.05, 0.12)
+    # elbow_pow = windowsmoother(compute_pow[endflat:endelbow], time[endflat:endelbow], 6, 0.03, 0.07)
+    # # upshoot_pow = windowsmoother(compute_pow[endelbow:endupshoot], time[endelbow:endupshoot], 3, 0.02, 0.15)
+    # upshoot_pow = compute_pow[endelbow:endupshoot].tolist()
+    # turnover_pow = windowsmoother(compute_pow[endupshoot:endturnover], time[endupshoot:endturnover], 6, 0.03, 0.07)
+    # topoff_pow = windowsmoother(compute_pow[endturnover:], time[endturnover:], 8, 0.05, 0.12)
     #
     # smpow = np.array(flat_pow + elbow_pow + upshoot_pow + turnover_pow + topoff_pow)
     # plt.plot(time, smpow, color="orange")

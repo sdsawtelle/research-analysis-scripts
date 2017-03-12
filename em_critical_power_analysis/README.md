@@ -57,7 +57,7 @@ Specific usage is to first call pic_all() to make plots of all traces, so that c
 
 Now call fit_all() with kwargs rjmin and rjmax to fit the ramps between rjmin and rjmax for each trace to the constant power model. This function creates and pickles a dataframe whose indices are the trace names and whose values are various demographic info about the device as well as the fit results. It also creates and pickles a dict of dicts with the same information. The pickled dataframe has a column 'conforms' which denotes whether the device appears to conform to the constant power model or not. This is initialized to 1 for all traces but values can later be changed by calling set_pc_conforms(fname). The dict and df pickles are named with the specific rjmin and rjmax values that were used for the fitting, so users can try different values of these kwargs and not overwrite previous results.
 
-# Usage for Single Temperature Electromigration
+# Usage for Variable Temperature Electromigration
 In some cases we have performed electromigration of a device to some small value of $R_n^J$ at environmental temperature, $T_1$, and then completed the electromigration at a different temperature $T_2$. The aim is to determine how the critical power changes as a function of ambient temperature.
 
 The data consists of, for each device, an EM trace breaking the junction from 0 to 20 ohms at $T_1$ and then a second EM trace breaking the junction from 20 to 120 ohms at $T_2$. I call these "partial" and "final" EM. In addition, there are two IV traces for each device (one from $T_1$ and one from $T_2$), that may be used in the analysis (not sure yet). 
@@ -68,3 +68,28 @@ Now call fit_all() with to fit the partial and final traces of each device to th
 
 Finally, call `analyze_pc` to create and pickle a dataframe which stores information in the most usable way. Namely, rows are indexed by device, and columns contain information such as $T_1$, $T_2$, fitted critical power at $T_1$, fitted critical power at $T_2$, and device demographics. 
 
+# Brainstorming new varitemp analysis work flow
+First sort into trash and geometry folders like before. Now do pic_all() that will plot a zoom in of the split region. Try y_max as 20 ohms plus the resistance on the last point of the first ramp of final EM. Try y_min as the resistance on the last point of the last ramp of partial EM plus 20 ohms. Based on inspecting these plots discard devices that have some obviously strange behavior. 
+
+Now do the "prep": for every device choose the first valid ramp of the final EM and indicate any false ramps that might fall within the fitting range. 
+
+
+Now do the fits for a given deltaRj. For partial EM discard the last "ramp" (i.e. the partial ramp designed for comparing resistances), then include any ramps whose first point has resistance within deltaRj of the last actual ramp. Take as res_tot_0 the resistance at the first point of the first of these included ramp cycles. For final EM include all ramps whose resistance at the first point of the ramp is within deltaRj of the resistance at the first point of the chosen "first valid ramp". Plot the overlaid traces as we have been doing and create the same dicts and dfs of the results. 
+
+
+# New Prep for Varitemp Analysis
+For each device: choose false ramps for partial, choose last valid ramp for final and then false ramps for final - set "false_ramp" to true for all ramps beyond the last valid ramp. Add in a function that takes rjmin and rjmax and does an unconstrained fit of the non-false-ramps from the final EM trace between rjmin and rjmax (calling rj = 0 at the first non-false-ramp of the final EM trace). In the final aggregate analysis DF there should be a new column(s) which holds to fit info from the unconstrained fit of just the final EM trace for that device. 
+
+To include the current-dependent series resistance add a step in the fitting that takes the first valid ramp included in the fit and uses the first 50 or so points from that ramp to estimate the slope of R(I), and then of course the actual fitting functions need to be modified to account for this. 
+
+
+# NOTES FROM MOST RECENT REVISION TO CODE
+After extracting the ramp cycles for a trace we have a dataframe where each ramp is a row in the frame, and the columns store the following:
+- lists of all voltages, currents and resistances in that ramp
+- "last_v" and "first_i" which are the voltage and current at the last point in the ramp i.e. where EM is initiated
+- "first_r" which is the average of the resistance between the 2nd through 10th point of the ramp which is interpreted as the total resistance of the device on that ramp cycle.
+- a boolean indicating whether the ramp is a false ramp cycle and should be excluded from fitting (all initialized to False)
+
+The fit results in two parameters, the fixed series resistance of the device and the critical power in the junction. For the first included ramp in the fit we have "first_r" = (measured total resistance) = r_series + rj0 where rj0 is the initial junction resistance. On each subsequent ramp "first_r" = r_series + rj(t). 
+
+To plot the fit, for each ramp we plot "last_i" (current at which EM is initiated) as a function of "rj(t)" for that ramp. 

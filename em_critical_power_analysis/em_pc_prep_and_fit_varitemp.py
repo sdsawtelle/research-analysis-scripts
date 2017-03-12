@@ -104,7 +104,7 @@ def plot_ramps(df_ramps, fitcol=False, rjmax=None, trace="", newfig=True):
     return fig1, ax1
 
 
-def plot_traces_combined(path):
+def plot_traces_combined(path, zoom=False):
     """For every unique device plot the full partial EM, full final EM, and selected ramps for fitting from both partial
     and final."""
     with open("prepped_traces_dict.pickle", "rb") as myfile:
@@ -126,6 +126,14 @@ def plot_traces_combined(path):
             ax.plot(full_df["voltage"], full_df["resistance"], linestyle="None")
             prep_df = prepped_traces_dict[trace.strip(".txt")]["df"]
             plot_ramps(prep_df, fitcol=True, newfig=False)
+
+            if zoom == True:
+                if "partial" in trace:
+                    minres = np.min(full_df["resistance"])
+                    ax.set_ylim([minres, ax.get_ylim()[1]])
+                if "final" in trace:
+                    maxres = np.max(prep_df.iloc[-1, 2])+15
+                    ax.set_ylim([ax.get_ylim()[0], maxres])
         plt.savefig("TRACES_FOR_FIT_%s.png" % (port,))
         plt.close(fig)
 
@@ -149,9 +157,10 @@ def plot_fits_combined(path):
         axs = np.ravel(axs)
 
         # Get the partial and final traces for this device, sort so partial is first
-        traces = [fname for fname in fnames if port in fname]
-        mtimes = [os.path.getmtime(fname) for fname in traces]
-        traces = [trace.strip(".txt") for (mtime, trace) in sorted(zip(mtimes, traces))]
+        traces = [fname.strip(".txt") for fname in fnames if port in fname]
+        traces = [tr for tr in traces if "partial" in tr] + [tr for tr in traces if "final" in tr]
+        # ctimes = [os.path.getctime(fname) for fname in traces]
+        # traces = [trace.strip(".txt") for (ctime, trace) in sorted(zip(ctimes, traces))]
 
         res = 1
         for idx, trace in enumerate(traces):
@@ -162,6 +171,7 @@ def plot_fits_combined(path):
 
         fig.suptitle("Fit to $P_c$ Model: Ratio = %.2f" % (res,))
         plt.savefig("FITS_%s" % (port,))
+    plt.close("all")
 
 
 def pic_all(path, rjmax=500):
@@ -194,22 +204,25 @@ def prep_all(path):
 
     # For each unique device identifier, do the ramp analysis for both traces
     for port in ports:
-        traces = [fname for fname in fnames if port in fname]
         print("--------------------------------------------------------")
         print("--------------------------------------------------------")
         print("Prepare Traces for Device %s" %(port,))
         print("--------------------------------------------------------")
         print("--------------------------------------------------------")
-        prep_device(traces)
+        prep_device(port, path)
 
 
-def prep_device(traces):
+def prep_device(port, path):
     # Create (or load if it exists) the dict that will store prepped DFs and res_tot_0 for all traces.
     if os.path.isfile("prepped_traces_dict.pickle"):
         with open("prepped_traces_dict.pickle", "rb") as myfile:
             prepped_traces_dict = pickle.load(myfile)
     else:
         prepped_traces_dict = {}
+
+    # Get the two traces for this device (partial and final
+    fnames = snp.txtfilenames(path)
+    traces = [fname for fname in fnames if port in fname]
 
     # Do ramp selection and res_tot_0 choice for both the partial and final traces
     for idx, fname in enumerate(traces):
@@ -338,7 +351,7 @@ def choose_good_ramps(df, other_df):
 ######################################################
 # FITTING PARTIAL EM TRACES #####
 ######################################################
-def fit_all(path, ratios, group, env="ambient", chip="3-5"):
+def fit_all(path, ratios, group, env, chip):
     """Fit constant power model to all prepared dataframes in path, and store results in new dict and df."""
     # Read in the dictionary of prepped traces (dfs and res_tot_0's) and get list of traces
     with open("prepped_traces_dict.pickle", "rb") as myfile:
@@ -396,15 +409,12 @@ def fit_all(path, ratios, group, env="ambient", chip="3-5"):
         volt = df["last_v"].values
         curr = df["last_i"].values
 
-        # Get the fitted rj0 and res_tot_0 from the corresponding partial trace
+        # Get the fitted rj0 and r_series from the corresponding partial trace and scale them
         port = "_".join(trace.split("_")[-2:])
-        partial_rj0 = fit_df.loc[fit_df.index.str.contains("partial_" + port), "rj0"].values[0]
-        partial_restot = fit_df.loc[fit_df.index.str.contains("partial_" + port), "res_tot_0"].values[0]
-        r_series = partial_restot - partial_rj0
+        rj0 = fit_df.loc[fit_df.index.str.contains("partial_" + port), "rj0"].values[0] * ratios[port]
+        r_series = fit_df.loc[fit_df.index.str.contains("partial_" + port), "r_series"].values[0] * ratios[port]
 
-        # Scale the fitted Rseries (and Rj0) from the partial EM and then use that to fit and save results.
-        r_series = r_series * ratios[port]
-        rj0 = partial_rj0 * ratios[port]
+        # Use scaled r_series to fit and save results.
         lsq_fit = do_fit(volt, curr, r_series)
         fit_dict[trace] = {"r_series": r_series, "crit_pow": lsq_fit.x[0],
                            "rj0": rj0, "res_tot_0": res_tot_0, "group": group,
@@ -562,8 +572,9 @@ def resistance_ratios_from_em(path):
     for port in ports:
         # Order the partial and final traces so we know which direction to take the ratio
         traces = [os.path.join(path, fname) for fname in fnames if port in fname]
-        mtimes = [os.path.getmtime(fname) for fname in traces]
-        traces = [trace for (mtime, trace) in sorted(zip(mtimes, traces))]
+        traces = [tr for tr in traces if "partial" in tr] + [tr for tr in traces if "final" in tr]
+        # ctimes = [os.path.getctime(fname) for fname in traces]
+        # traces = [trace for (ctime, trace) in sorted(zip(ctimes, traces))]
         
         # Read in DFs for partial and final EM, pull the last ramp cycle of partial EM (a "semi-ramp")
         df_partial = extract_ramps(get_trace(traces[0]))
@@ -583,10 +594,13 @@ def resistance_ratios_from_em(path):
             # If the best "match" is not within 1 mV then we need to look in the next ramp cycle
             if (vf - vp[0])[start_idx] <= 0.001:
                 loopflag = 0
-                res_ratios = rf[start_idx:stop_idx + 1] / rp
+                # Note, in case the first matching ramp from final EM stops in the middle of the last ramp of partial
+                # EM, we need to potentially truncate rp
+                res_ratios = rf[start_idx:stop_idx + 1] / rp[:(stop_idx - start_idx) + 1]
             ramp += 1
         ratios[port] = res_ratios.mean()
-        
+        # ratios[port] = 1
+
     # Print the results
     for item in ratios.items():
         print(item)
@@ -628,8 +642,33 @@ def analyze_pc(path):
     print("CRITICAL POWER Mean Ratio is %.2f +/- %.2f" % (df["p_ratio"].mean(), df["p_ratio"].std()))
 
 
+def aggregate_pc(paths):
+    df = pd.DataFrame()
+    for path in paths:
+        dfpath = path + "/pc_analysis.pickle"
+        with open(dfpath, "rb") as myfile:
+            temp = pickle.load(myfile)
+        df = pd.concat([df, temp], axis=0)
+
+    fig, ax = plt.subplots()
+    snp.labs("Ratio of T2/T1", "Ratio of p2/p1", "Critical Power Ratios for Varitemp EM")
+    cm = snp.cmap(ncols = len(df["group"].unique()))
+    for grp in df["group"].unique():
+        ax.scatter(df.loc[df["group"] == grp, "T_ratio"], df.loc[df["group"] == grp, "p_ratio"], label=grp, c=next(cm))
+    ax.legend(loc="upper center")
+    return df
 
 
+
+
+
+paths = [
+"C:/Users/Sonya/Documents/My Box Files/MolT Project/161230_SDS20_Chip_11-10/161230_Chip_11-10_EM_95K/30x10",
+"C:/Users/Sonya/Documents/My Box Files/MolT Project/170101_SDS20_Chip_6-9/170101_Chip_6-9_EM_95K/30x10",
+"C:/Users/Sonya/Documents/My Box Files/MolT Project/170114_SDS20_Chip_7-11/170114_Chip_7-11_EM_95K/30x10",
+"C:/Users/Sonya/Documents/My Box Files/MolT Project/170114_SDS20_Chip_7-11/170114_Chip_7-11_EM_95K/50x400",
+"C:/Users/Sonya/Documents/My Box Files/MolT Project/170114_SDS20_Chip_7-11/170114_Chip_7-11_EM_125K/30x10",
+"C:/Users/Sonya/Documents/My Box Files/MolT Project/170114_SDS20_Chip_7-11/170114_Chip_7-11_EM_125K/50x400"]
 
 
 
@@ -638,7 +677,8 @@ def analyze_pc(path):
 ######################################################
 
 # Move to the place where this data is stored
-path = "C:/Users/Sonya/Documents/My Box Files/MolT Project/170115_SDS20_Chip_7-9/EM_95K/30x10/test"
+# path = "C:/Users/Sonya/Documents/My Box Files/MolT Project/170114_SDS20_Chip_7-11/170114_Chip_7-11_EM_125K/30x10"
+path = paths[5]
 os.chdir(path)
 
 # Look at pics to discard any really crap traces from being analyzed
@@ -646,18 +686,20 @@ os.chdir(path)
 
 # Set values for all relevant variables
 chip = "7-11"
-group = "30x10"
-temp = 125.0
+group = "50x400"
 env = "He_gas"
-rjmax = 200
-rjmin = 0
 
 prep_all(path)
 ratios = resistance_ratios_from_em(path)
 fit_all(path, ratios, group=group, env=env, chip=chip)
-plot_traces_combined(path)
+plot_traces_combined(path, zoom=True)
 plot_fits_combined(path)
 analyze_pc(path)
 
 
+aggregate_pc(paths)
+
+
 print("debug")
+
+

@@ -26,8 +26,7 @@ plt.close("all")
 
 
 # Move to the place where this data is stored
-path = "C:/Users/Sonya/Documents/My Box Files/MolT Project/170112_SDS20_Chip_7-11/EM_125K/50x400"
-
+path = "C:/Users/Sonya/Documents/My Box Files/MolT Project/170225_SDS20_Chip_10-5/50x400_93"
 os.chdir(path)
 save = True
 
@@ -37,10 +36,11 @@ save = True
 for fname in snp.txtfilenames(path):
     df = pd.read_csv(fname, header=1)
     df.columns = [col.strip(" ") for col in df.columns]  # Some headers have extra spaces
-
     fig, ax = snp.newfig()
     snp.labs("Voltage (V)", "Current (I)", "EM Trace - %s" %(fname.strip(".txt"),))
-    ax.plot(df["voltage"], df["current"], linestyle="None")
+    # ax.plot(df["voltage"], df["current"], linestyle="None")
+    ax.plot(df["current"], df["resistance"], linestyle="None")
+
     if(save):
         plt.savefig("EM_IV_Trace_%s.png" %(fname.strip(".txt"),))
 plt.close("all")
@@ -56,7 +56,8 @@ for fname in snp.txtfilenames(path):
     ax.plot(df["voltage"], df["resistance"], linestyle="None")
     if(save):
         plt.savefig("EM_RV_Trace_%s.png" %(fname.strip(".txt"),))
-plt.close("all")
+
+    plt.close("all")
 
 
 ###############################################################################################
@@ -73,8 +74,9 @@ for id in ids:
         df.columns = [col.strip(" ") for col in df.columns]  # Some headers have extra spaces
         ax.plot(df["voltage"], df["resistance"], linestyle="None")
     if(save):
-        plt.savefig("EM_RV_Trace_%s.png" %(id,))
-plt.close("all")
+        # plt.savefig("EM_RV_Trace_%s.png" %(id,))
+        pass
+    # plt.close("all")
 
 
 ###############################################################################################
@@ -148,3 +150,6 @@ print("Mean Ratio is %.2f +/- %.2f" % (np.mean(list(ratios.values())), np.std(li
 ax.legend(loc="lower right")
 plt.savefig("Compare_Temperature_IVs.png")
 plt.close("all")
+
+
+
