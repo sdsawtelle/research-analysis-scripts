@@ -1,4 +1,4 @@
-"""  This script will take the standard yield measurement files in a directory and make a plot resistance values.
+"""  This script will take the standard yield measurement files in a directory and make a plot of resistance values.
 """
 
 __author__ = 'Sonya'
@@ -24,12 +24,7 @@ snp.prettyplot(matplotlib)
 plt.close("all")
 
 
-
-
-
-###############################################################################################
 ################### PLOT YIELD RESISTANCES FOR SINGLE CHIP ##########################
-###############################################################################################
 # Move to the place where this data is stored
 path = "C:/Users/Sonya/Documents/My Box Files/MolT Project/170113_SDS20_Chip_9-11/YIELDS/yield-monitor"
 os.chdir(path)
@@ -63,10 +58,7 @@ ax.plot(np.arange(len(res_50x400)), res_50x400, label="50x400", linestyle="None"
 ax.legend()
 
 
-
-###############################################################################################
 ################### PLOT YIELD RESISTANCES FOR MULTIPLE CHIP ##########################
-###############################################################################################
 paths = ["C:/Users/Sonya/Documents/My Box Files/MolT Project/170113_SDS20_Chip_9-11/YIELDS/yield-monitor",
         "C:/Users/Sonya/Documents/My Box Files/MolT Project/170113_SDS20_Chip_9-11/YIELDS_6-9",
         "C:/Users/Sonya/Documents/My Box Files/MolT Project/170113_SDS20_Chip_9-11/YIELDS_11-10",

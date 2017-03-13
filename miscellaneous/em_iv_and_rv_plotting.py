@@ -25,14 +25,12 @@ snp.prettyplot(matplotlib)
 plt.close("all")
 
 
-# Move to the place where this data is stored
+# Move to the place where the data is stored
 path = "C:/Users/Sonya/Documents/My Box Files/MolT Project/170225_SDS20_Chip_10-5/50x400_93"
 os.chdir(path)
 save = True
 
-###############################################################################################
 ################### PLOT IV ##########################
-###############################################################################################
 for fname in snp.txtfilenames(path):
     df = pd.read_csv(fname, header=1)
     df.columns = [col.strip(" ") for col in df.columns]  # Some headers have extra spaces
@@ -45,9 +43,8 @@ for fname in snp.txtfilenames(path):
         plt.savefig("EM_IV_Trace_%s.png" %(fname.strip(".txt"),))
 plt.close("all")
 
-###############################################################################################
+
 ################### PLOT RV ##########################
-###############################################################################################
 for fname in snp.txtfilenames(path):
     df = pd.read_csv(fname, header=1)
     df.columns = [col.strip(" ") for col in df.columns]  # Some headers have extra spaces
@@ -56,13 +53,10 @@ for fname in snp.txtfilenames(path):
     ax.plot(df["voltage"], df["resistance"], linestyle="None")
     if(save):
         plt.savefig("EM_RV_Trace_%s.png" %(fname.strip(".txt"),))
-
     plt.close("all")
 
 
-###############################################################################################
 ################### PLOT RV FOR PARTIAL/FINAL BREAKING TOGETHER ##########################
-###############################################################################################
 names = snp.txtfilenames(path)
 ids = ["_".join(name.split("_")[-2:]).strip(".txt") for name in names]
 ids = list(set(ids))
@@ -79,9 +73,7 @@ for id in ids:
     # plt.close("all")
 
 
-###############################################################################################
 ################### PLOT FOR CONST-VOLTAGE EM TRACES ##########################
-###############################################################################################
 for fname in snp.txtfilenames(path):
     with open(fname) as f:
         data = f.read()
@@ -108,11 +100,7 @@ for fname in snp.txtfilenames(path):
 plt.close("all")
 
 
-
-
-###############################################################################################
-################### COMPARE TEMPERATURE IVs ##########################
-###############################################################################################
+################### COMPARE IVs AT DIFFERENT TEMPERATURES ##########################
 # Move to the place where this data is stored
 path = "C:/Users/Sonya/Documents/My Box Files/MolT Project/170112_SDS20_Chip_7-11/IV_125K"
 
@@ -145,7 +133,6 @@ for port in ports:
 
 for item in ratios.items():
     print(item)
-# print(ratios)
 print("Mean Ratio is %.2f +/- %.2f" % (np.mean(list(ratios.values())), np.std(list(ratios.values()))))
 ax.legend(loc="lower right")
 plt.savefig("Compare_Temperature_IVs.png")

@@ -2,110 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="677ffba4-fdb6-4925-a384-4e14430bdb7b" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cbif-neuroprobe/cbif_oxygen_sensor_analysis.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/crit_temp_model_xiang2014.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/em_const_pow_model/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/em_const_pow_model/em_pc_prep_and_fit.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/em_const_pow_model/em_pc_prep_and_fit_partial_and_final.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/em_const_pow_model/em_pc_prep_and_fit_partial_and_final_TEMP.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/em_const_pow_model/em_pc_visualize_results.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/em_const_volt_traces/.idea/inspectionProfiles/Project_Default.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/em_const_volt_traces/.idea/inspectionProfiles/profiles_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/em_const_volt_traces/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/em_const_volt_traces/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/em_const_volt_traces/.idea/python-em-breaking-rate.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/em_const_volt_traces/.idea/workspace.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/em_const_volt_traces/.ipynb_checkpoints/LAB-NOTEBOOK-em-breaking-rate-checkpoint.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/em_const_volt_traces/LAB-NOTEBOOK-em-breaking-rate.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/em_const_volt_traces/main.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/em_const_volt_traces/prepdata.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/em_const_volt_traces/smoothdata.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/em_const_volt_traces/splderiv.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/em_const_volt_traces/testdata_chip_9-6/EMC1_0608.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/em_const_volt_traces/testdata_chip_9-6/EMC3_0708.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/em_const_volt_traces/testdata_chip_9-6/EMC4_0203.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/em_const_volt_traces/testdata_chip_9-6/EMC5_0403.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/em_const_volt_traces/testdata_chip_9-6/EMC5_0503.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/em_const_volt_traces/testdata_chip_9-6/EMC5_0708.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/em_const_volt_traces/testdata_chip_9-6/SmoothedData/SMOOTHED_EMC1_0608.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/em_const_volt_traces/testdata_chip_9-6/SmoothedData/SMOOTHED_EMC3_0708.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/em_const_volt_traces/testdata_chip_9-6/SmoothedData/SMOOTHED_EMC4_0203.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/em_const_volt_traces/testdata_chip_9-6/SmoothedData/SMOOTHED_EMC5_0403.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/em_const_volt_traces/testdata_chip_9-6/SmoothedData/SMOOTHED_EMC5_0503.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/em_const_volt_traces/testdata_chip_9-6/SmoothedData/SMOOTHED_EMC5_0708.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/em_const_volt_traces/testdata_random/AllEMFiles/EMC10_FT2_0708.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/em_const_volt_traces/testdata_random/AllEMFiles/EMC11_FT2_0908.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/em_const_volt_traces/testdata_random/AllEMFiles/EMC11_FT2_1008.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/em_const_volt_traces/testdata_random/AllEMFiles/EMC12_FT2_2122.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/em_const_volt_traces/testdata_random/AllEMFiles/EMC13_FT2_2322.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/em_const_volt_traces/testdata_random/AllEMFiles/EMC13_FT2_2426.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/em_const_volt_traces/testdata_random/AllEMFiles/EMC13_FT2_2526.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/em_const_volt_traces/testdata_random/AllEMFiles/EMC13_FT2_2726.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/em_const_volt_traces/testdata_random/AllEMFiles/EMC14_FT3_2321.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/em_const_volt_traces/testdata_random/AllEMFiles/EMC15_FT3_IntDevs_2321.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/em_const_volt_traces/testdata_random/AllEMFiles/EMC16_FT3_IntDevs_1801.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/em_const_volt_traces/testdata_random/AllEMFiles/EMC17_FT3_IntDevs_0201.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/em_const_volt_traces/testdata_random/AllEMFiles/EMC18_FT2_IntDevs_0503.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/em_const_volt_traces/testdata_random/AllEMFiles/EMC19_FT1_IntDevs_0910.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/em_const_volt_traces/testdata_random/AllEMFiles/EMC19_FT1_IntDevs_1110.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/em_const_volt_traces/testdata_random/AllEMFiles/EMC19_FT1_IntDevs_1210.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/em_const_volt_traces/testdata_random/AllEMFiles/EMC2_FT1_1110.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/em_const_volt_traces/testdata_random/AllEMFiles/EMC3_FT1_1314.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/em_const_volt_traces/testdata_random/AllEMFiles/EMC4_FT1_1514.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/em_const_volt_traces/testdata_random/AllEMFiles/EMC5_FT2_0103.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/em_const_volt_traces/testdata_random/AllEMFiles/EMC9_FT2_0608.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/em_const_volt_traces/testdata_random/EMC2_FT1_1110.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/em_const_volt_traces/testdata_random/EMC3_FT1_1314.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/em_const_volt_traces/testdata_random/EMC4_FT1_1514.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/em_const_volt_traces/testdata_random/EMC5_FT2_0103.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/em_const_volt_traces/testdata_random/GoodCopies/SMOOTHED_EMC10_FT2_0708.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/em_const_volt_traces/testdata_random/GoodCopies/SMOOTHED_EMC11_FT2_0908.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/em_const_volt_traces/testdata_random/GoodCopies/SMOOTHED_EMC11_FT2_1008.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/em_const_volt_traces/testdata_random/GoodCopies/SMOOTHED_EMC12_FT2_2122.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/em_const_volt_traces/testdata_random/GoodCopies/SMOOTHED_EMC13_FT2_2322.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/em_const_volt_traces/testdata_random/GoodCopies/SMOOTHED_EMC13_FT2_2426.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/em_const_volt_traces/testdata_random/GoodCopies/SMOOTHED_EMC13_FT2_2526.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/em_const_volt_traces/testdata_random/GoodCopies/SMOOTHED_EMC13_FT2_2726.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/em_const_volt_traces/testdata_random/GoodCopies/SMOOTHED_EMC14_FT3_2321.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/em_const_volt_traces/testdata_random/GoodCopies/SMOOTHED_EMC15_FT3_IntDevs_2321.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/em_const_volt_traces/testdata_random/GoodCopies/SMOOTHED_EMC16_FT3_IntDevs_1801.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/em_const_volt_traces/testdata_random/GoodCopies/SMOOTHED_EMC17_FT3_IntDevs_0201.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/em_const_volt_traces/testdata_random/GoodCopies/SMOOTHED_EMC18_FT2_IntDevs_0503.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/em_const_volt_traces/testdata_random/GoodCopies/SMOOTHED_EMC19_FT1_IntDevs_0910.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/em_const_volt_traces/testdata_random/GoodCopies/SMOOTHED_EMC19_FT1_IntDevs_1110.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/em_const_volt_traces/testdata_random/GoodCopies/SMOOTHED_EMC19_FT1_IntDevs_1210.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/em_const_volt_traces/testdata_random/GoodCopies/SMOOTHED_EMC2_FT1_1110.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/em_const_volt_traces/testdata_random/GoodCopies/SMOOTHED_EMC3_FT1_1314.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/em_const_volt_traces/testdata_random/GoodCopies/SMOOTHED_EMC4_FT1_1514.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/em_const_volt_traces/testdata_random/GoodCopies/SMOOTHED_EMC5_FT2_0103.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/em_const_volt_traces/testdata_random/GoodCopies/SMOOTHED_EMC9_FT2_0608.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/em_const_volt_traces/testdata_random/RjvsPj_ColorCoded.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/em_const_volt_traces/testdata_random/SmoothedData/SMOOTHED_EMC10_FT2_0708.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/em_const_volt_traces/testdata_random/SmoothedData/SMOOTHED_EMC11_FT2_0908.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/em_const_volt_traces/testdata_random/SmoothedData/SMOOTHED_EMC11_FT2_1008.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/em_const_volt_traces/testdata_random/SmoothedData/SMOOTHED_EMC12_FT2_2122.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/em_const_volt_traces/testdata_random/SmoothedData/SMOOTHED_EMC13_FT2_2322.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/em_const_volt_traces/testdata_random/SmoothedData/SMOOTHED_EMC13_FT2_2426.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/em_const_volt_traces/testdata_random/SmoothedData/SMOOTHED_EMC13_FT2_2726.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/em_const_volt_traces/testdata_random/SmoothedData/SMOOTHED_EMC16_FT3_IntDevs_1801.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/em_const_volt_traces/testdata_random/SmoothedData/SMOOTHED_EMC17_FT3_IntDevs_0201.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/em_const_volt_traces/testdata_random/SmoothedData/SMOOTHED_EMC18_FT2_IntDevs_0503.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/em_const_volt_traces/testdata_random/SmoothedData/SMOOTHED_EMC19_FT1_IntDevs_0910.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/em_const_volt_traces/testdata_random/SmoothedData/SMOOTHED_EMC19_FT1_IntDevs_1110.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/em_const_volt_traces/testdata_random/SmoothedData/SMOOTHED_EMC19_FT1_IntDevs_1210.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/em_const_volt_traces/testdata_random/SmoothedData/SMOOTHED_EMC2_FT1_1110.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/em_const_volt_traces/testdata_random/SmoothedData/SMOOTHED_EMC4_FT1_1514.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/em_const_volt_traces/testdata_random/SmoothedData/WeirdOnes/SMOOTHED_EMC13_FT2_2526.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/em_const_volt_traces/testdata_random/SmoothedData/WeirdOnes/SMOOTHED_EMC14_FT3_2321.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/em_const_volt_traces/testdata_random/SmoothedData/WeirdOnes/SMOOTHED_EMC15_FT3_IntDevs_2321.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/em_const_volt_traces/testdata_random/SmoothedData/WeirdOnes/SMOOTHED_EMC3_FT1_1314.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/em_const_volt_traces/testdata_random/SmoothedData/WeirdOnes/SMOOTHED_EMC5_FT2_0103.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/em_iv_and_rv_plotting.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/keithley_range_investigation.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/nw_resistivity_and_rseries_fit.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/nw_yield_monitoring.py" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/em_critical_power_analysis/em_pc_prep_and_fit.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/em_critical_power_analysis/em_pc_prep_and_fit_varitemp.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/em_critical_power_analysis/em_pc_prep_and_fit_varitemp_FINALEM.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/em_critical_power_analysis/em_pc_prep_and_fit_varitemp_ver2.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/em_critical_power_analysis/em_pc_prep_and_fit_varitemp_ver3.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/em_critical_power_analysis/em_pc_varitemp_singletrace_CLEAN.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/em_critical_power_analysis/em_pc_visualize_results.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/em_critical_power_analysis/README.md" afterPath="$PROJECT_DIR$/em_critical_power_analysis/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/em_critical_power_analysis/em_pc_varitemp_singletrace.py" afterPath="$PROJECT_DIR$/em_critical_power_analysis/em_pc_varitemp_singletrace.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/miscellaneous/em_iv_and_rv_plotting.py" afterPath="$PROJECT_DIR$/miscellaneous/em_iv_and_rv_plotting.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/miscellaneous/keithley_range_investigation.py" afterPath="$PROJECT_DIR$/miscellaneous/keithley_range_investigation.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/miscellaneous/nw_yield_monitoring.py" afterPath="$PROJECT_DIR$/miscellaneous/nw_yield_monitoring.py" />
     </list>
     <ignored path="python-research-data-scripts.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -124,7 +33,7 @@
     <favorites_list name="python-research-data-scripts" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -193,6 +102,9 @@
         <option value="$PROJECT_DIR$/em_const_pow_model/em_pc_varitemp_singletrace_CLEAN.py" />
         <option value="$PROJECT_DIR$/../python-wrappers-and-snippets/snips.py" />
         <option value="$PROJECT_DIR$/crit_temp_model_xiang2014.py" />
+        <option value="$PROJECT_DIR$/miscellaneous/em_iv_and_rv_plotting.py" />
+        <option value="$PROJECT_DIR$/miscellaneous/keithley_range_investigation.py" />
+        <option value="$PROJECT_DIR$/miscellaneous/nw_yield_monitoring.py" />
       </list>
     </option>
   </component>
@@ -220,7 +132,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="PyConsoleConfigurable.Python Console" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../python-wrappers-and-snippets/snips.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/miscellaneous/em_iv_and_rv_plotting.py" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/Sonya/Documents/My Box Files/Projects/python-research-data-scripts/em_iv_and_rv_plotting.py" />
   </component>
   <component name="PyConsoleOptionsProvider">
@@ -468,25 +380,25 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="0" />
     <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run Dashboard" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32987553" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3340249" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32987553" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32987553" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37759337" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Run Dashboard" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32987553" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32987553" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37759337" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -545,39 +457,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../python-wrappers-and-snippets/snips.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2346">
-          <caret line="138" column="29" lean-forward="false" selection-start-line="93" selection-start-column="4" selection-end-line="93" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/extract-series-r.py" />
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/matplotlib/pyplot.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="666" column="0" lean-forward="false" selection-start-line="666" selection-start-column="0" selection-end-line="666" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plotting-resistance-by-geom-chip-5-10/extract_series_resistance.py" />
-    <entry file="file://$PROJECT_DIR$/plotting_emcurvature.py" />
-    <entry file="file://$PROJECT_DIR$/extract_series_resistance.py" />
-    <entry file="file://$PROJECT_DIR$/../python-mcmc-snippets/mcmc.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="52" column="14" lean-forward="false" selection-start-line="52" selection-start-column="14" selection-end-line="52" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/matplotlib/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="1810" column="0" lean-forward="false" selection-start-line="1810" selection-start-column="0" selection-end-line="1810" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chipdicts.py" />
     <entry file="file://$PROJECT_DIR$/fit_rs_and_ohm_per_nm.py" />
     <entry file="file://$PROJECT_DIR$/fitting-const-V-EM/main.py" />
     <entry file="file://$PROJECT_DIR$/../python-wrappers-and-snippets/openpickle.py">
@@ -620,54 +499,18 @@
     <entry file="file://$PROJECT_DIR$/em_pc_vs_rj_prep_and_fit.py" />
     <entry file="file://$PROJECT_DIR$/em_pc_vs_rj_analyze_results.py" />
     <entry file="file://$PROJECT_DIR$/chip_dev_geometry_dicts.py" />
-    <entry file="file://$PROJECT_DIR$/nw_resistivity_and_rseries_fit.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-249">
-          <caret line="1" column="117" lean-forward="false" selection-start-line="1" selection-start-column="117" selection-end-line="1" selection-end-column="117" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/nw_resistivity_and_rseries_fit.py" />
     <entry file="file://$PROJECT_DIR$/em_cont_pow_model/em_pc_prep_and_fit.py" />
     <entry file="file://$PROJECT_DIR$/keithley_current_range_simulation.py" />
-    <entry file="file://$PROJECT_DIR$/em_const_volt_traces/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1275">
-          <caret line="12" column="24" lean-forward="false" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cbif-neuroprobe/cbif_oxygen_sensor_analysis.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="171" column="9" lean-forward="false" selection-start-line="171" selection-start-column="9" selection-end-line="171" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/em_const_volt_traces/main.py" />
+    <entry file="file://$PROJECT_DIR$/cbif-neuroprobe/cbif_oxygen_sensor_analysis.py" />
     <entry file="file://$PROJECT_DIR$/em_const_pow_model/nw-yield-monitoring.py" />
     <entry file="file://$PROJECT_DIR$/em_const_pow_model/em_finish_pc_prep_and_fit.py" />
     <entry file="file://$PROJECT_DIR$/em_const_pow_model/em_pc_prep_and_fit_partial_and_final.py" />
     <entry file="file://$PROJECT_DIR$/em_const_pow_model/em_pc_prep_and_fit_partial_and_final_TEMP.py" />
-    <entry file="file://$PROJECT_DIR$/em_const_pow_model/em_pc_prep_and_fit_varitemp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="237" column="0" lean-forward="false" selection-start-line="237" selection-start-column="0" selection-end-line="237" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/em_const_pow_model/em_pc_prep_and_fit.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="214" column="9" lean-forward="false" selection-start-line="214" selection-start-column="9" selection-end-line="214" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/em_const_pow_model/em_pc_visualize_results.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="190" column="0" lean-forward="false" selection-start-line="190" selection-start-column="0" selection-end-line="193" selection-end-column="104" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/em_const_pow_model/em_pc_prep_and_fit_varitemp.py" />
+    <entry file="file://$PROJECT_DIR$/em_const_pow_model/em_pc_prep_and_fit.py" />
+    <entry file="file://$PROJECT_DIR$/em_const_pow_model/em_pc_visualize_results.py" />
     <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/pandas/core/indexing.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
@@ -675,20 +518,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/em_const_pow_model/em_pc_prep_and_fit_varitemp_ver2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="315" column="24" lean-forward="false" selection-start-line="315" selection-start-column="24" selection-end-line="315" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/em_const_pow_model/em_pc_prep_and_fit_varitemp_ver3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="371" column="0" lean-forward="false" selection-start-line="371" selection-start-column="0" selection-end-line="371" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/em_const_pow_model/em_pc_prep_and_fit_varitemp_ver2.py" />
+    <entry file="file://$PROJECT_DIR$/em_const_pow_model/em_pc_prep_and_fit_varitemp_ver3.py" />
     <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/pandas/core/internals.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="143">
@@ -696,13 +527,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cernox_calibration.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="66" column="26" lean-forward="false" selection-start-line="66" selection-start-column="26" selection-end-line="66" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/cernox_calibration.py" />
     <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/matplotlib/backends/backend_qt5agg.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -710,35 +535,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/em_const_pow_model/em_pc_varitemp_singletrace.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="1507" column="52" lean-forward="false" selection-start-line="1507" selection-start-column="52" selection-end-line="1507" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/em_const_pow_model/em_pc_prep_and_fit_varitemp_FINALEM.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="1586" column="31" lean-forward="true" selection-start-line="1586" selection-start-column="31" selection-end-line="1586" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/em_iv_and_rv_plotting.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crit_temp_model_xiang2014.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4556">
-          <caret line="478" column="24" lean-forward="false" selection-start-line="478" selection-start-column="24" selection-end-line="478" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/em_const_pow_model/em_pc_varitemp_singletrace.py" />
+    <entry file="file://$PROJECT_DIR$/em_const_pow_model/em_pc_prep_and_fit_varitemp_FINALEM.py" />
+    <entry file="file://$PROJECT_DIR$/em_iv_and_rv_plotting.py" />
+    <entry file="file://$PROJECT_DIR$/crit_temp_model_xiang2014.py" />
     <entry file="file://$PROJECT_DIR$/../python-wrappers-and-snippets/snips.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
@@ -812,10 +612,75 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/em_const_pow_model/em_pc_varitemp_singletrace_CLEAN.py">
+    <entry file="file://$PROJECT_DIR$/em_const_pow_model/em_pc_varitemp_singletrace_CLEAN.py" />
+    <entry file="file://$PROJECT_DIR$/miscellaneous/keithley_range_investigation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="941" column="68" lean-forward="true" selection-start-line="941" selection-start-column="68" selection-end-line="941" selection-end-column="68" />
+        <state relative-caret-position="95">
+          <caret line="38" column="42" lean-forward="false" selection-start-line="38" selection-start-column="42" selection-end-line="38" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/miscellaneous/em_iv_and_rv_plotting.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="97" column="17" lean-forward="false" selection-start-line="97" selection-start-column="17" selection-end-line="97" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/miscellaneous/nw_resistivity_and_rseries_fit.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="34" lean-forward="false" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/miscellaneous/nw_yield_monitoring.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="19" lean-forward="true" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/em_critical_power_analysis/em_pc_prep_and_fit_varitemp_ver2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="58" lean-forward="false" selection-start-line="13" selection-start-column="58" selection-end-line="13" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/em_critical_power_analysis/em_pc_visualize_results.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1751">
+          <caret line="8" column="34" lean-forward="true" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/em_critical_power_analysis/em_pc_prep_and_fit_varitemp_ver3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="74" lean-forward="false" selection-start-line="7" selection-start-column="74" selection-end-line="7" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/em_critical_power_analysis/em_pc_prep_and_fit_varitemp_FINALEM.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-23089">
+          <caret line="14" column="61" lean-forward="false" selection-start-line="14" selection-start-column="61" selection-end-line="14" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/em_critical_power_analysis/em_pc_varitemp_singletrace_CLEAN.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>

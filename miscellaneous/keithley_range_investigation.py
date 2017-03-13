@@ -29,9 +29,7 @@ path = "C:/Users/Sonya/Documents/My Box Files/molT Project/161018_SDS20_Chip_7-2
 os.chdir(path)
 
 
-#######################################################################
 ############ PLOTTING TRACES COLORED BY RANGE ############
-#######################################################################
 fnames = snp.txtfilenames(path)
 for fname in fnames:
     # Prepare Data Frame
@@ -69,10 +67,7 @@ for fname in fnames:
     plt.close(fig)
 
 
-
-#######################################################################
 ############ ACTUAL RESISTANCE TRACES ############
-#######################################################################
 resists = np.array(["84ohm", "176ohm", "605ohm", "1490ohm"])
 algos = ["21V_100mA", "2V_10mA", "21V_10mA"]
 colordict = snp.styledict(resists, type="color")
@@ -110,10 +105,7 @@ for name in names:
 #     pickle.dump(fig1, myfile)
 
 
-
-######################################################
-################ FITTING A VOLTAGE AND CURRENT OFFSET MODEL
-######################################################
+################ FITTING A VOLTAGE AND CURRENT OFFSET MODEL ##############################
 def predict_data(theta, volt):
     '''Compute a predicted current given fixed resistance and model parameters of voltage and current offset.'''
     rconst = theta[0]
@@ -149,8 +141,6 @@ snp.labs("Voltage (V)", "Resistance ($\Omega$)", "Keithley Voltage / Current Off
 ax2.plot(volt, volt/curr, label="data - 84 $\Omega$")
 ax2.plot(volt, (volt-fit.x[1])/(curr-fit.x[2]), label="LSQ fit - 84 $\Omega$")
 ax2.legend()
-ax2.text(x=1.2, y=0.2, s="R = %.2f\n Voffset = %.2f mV\n Ioffset = %.2f $\mu$A" % (fit.x[0], fit.x[1]*1000, fit.x[2]*10**6), ha='center', va='center', transform=ax.transAxes, size=14)
-
-
-
-print("debug")
+ax2.text(x=1.2, y=0.2, s="R = %.2f\n Voffset = %.2f mV\n Ioffset = %.2f $\mu$A" %
+                         (fit.x[0], fit.x[1]*1000, fit.x[2]*10**6), ha='center', va='center',
+         transform=ax.transAxes, size=14)

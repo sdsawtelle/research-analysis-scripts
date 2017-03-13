@@ -1,5 +1,7 @@
 # em_const_pow_model
 
+As of 3/13/17 the `em_pc_varitemp_finalem` script should be used to analyze the first real critical power versus temperature data set (four different geometries) while the script `em_pc_varitemp_singletrace` should be used to analyze the "sanity check" data set (single geometry 50 nm x 400 nm).
+
 ## Overview
 This module provides functionality to plot, prepare and fit standard EM traces within the constant-power model for electromigration. The user is able to restrict what parts of the trace should be included in analysis to exclude, for instance, later ramp cycles once the junction resistance is high and the device is unstable. Once the trace has been culled in this fashion, the analysis consists of identifying the current and voltage points where EM occurs, and then fitting that set of points using a constant critical power model.
 
@@ -83,7 +85,7 @@ For each device: choose false ramps for partial, choose last valid ramp for fina
 To include the current-dependent series resistance add a step in the fitting that takes the first valid ramp included in the fit and uses the first 50 or so points from that ramp to estimate the slope of R(I), and then of course the actual fitting functions need to be modified to account for this. 
 
 
-# NOTES FROM MOST RECENT REVISION TO CODE
+# Notes From Most Recent Revision to em_pc_varitemp_singletrace
 After extracting the ramp cycles for a trace we have a dataframe where each ramp is a row in the frame, and the columns store the following:
 - lists of all voltages, currents and resistances in that ramp
 - "last_v" and "first_i" which are the voltage and current at the last point in the ramp i.e. where EM is initiated
